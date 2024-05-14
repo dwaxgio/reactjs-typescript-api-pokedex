@@ -1,10 +1,23 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import { Items, Pokemon, Pokemons } from "./pages";
+// import Items from "./pages/Items";
+// import Pokemon from "./pages/Pokemon";
+// import Pokemons from "./pages/Pokemons";
 
 function App() {
   return (
-    <div className="app">
-      <h1>Pokemon</h1>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/pokemons/:name" element={<Pokemon />} />
+          <Route path="/pokemons" element={<Pokemons />} />
+          <Route path="/items" element={<Items />} />
+          <Route path="/" element={<Pokemons />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
