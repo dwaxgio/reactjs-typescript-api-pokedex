@@ -7,6 +7,9 @@ Poject created, using:
 - BrowserRouter
 - API Fetch
 
+## URL DEPLOYED PROJECT: 
+https://react-typescript-pokedex-api-app.netlify.app/
+
 ### MAIN SCREEN
 
 ![1_MAIN](./src/assets/1_MAIN.png)
